@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@comix.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.PCController">
+    <children>
+        <Label fx:id="nameLabel" layoutX="149.0" layoutY="24.0" styleClass="h2" text="COMIX - USER'S COLLECTION" />
+        <Button layoutX="194.0" layoutY="151.0" mnemonicParsing="false" onAction="#switchToDB" prefHeight="34.0" prefWidth="89.0" text="Database" />
+        <Button layoutX="194.0" layoutY="100.0" mnemonicParsing="false" onAction="#switchToPCAdapter" prefHeight="34.0" prefWidth="89.0" text="Export PC" />
+        <ListView fx:id="comicListView" layoutY="200.0" prefHeight="200.0" prefWidth="300.0" />
+        <AnchorPane layoutX="300.0" layoutY="200.0" prefHeight="200.0" prefWidth="300.0">
+            <children>
+                <Button fx:id="editButton" layoutX="201.0" layoutY="152.0" mnemonicParsing="false" onAction="#handleEditDialog" text="Edit Comic" />
+                <Button fx:id="removeButton" layoutX="100.0" layoutY="152.0" mnemonicParsing="false" onAction="#removeComicAction" text="Remove Comic" />
+                <Label fx:id="svi" layoutX="1.0" layoutY="-2.0" prefHeight="26.0" prefWidth="290.0" styleClass="detail" text="SVI: " />
+                <Label fx:id="publisher" layoutX="1.0" layoutY="24.0" prefHeight="26.0" prefWidth="290.0" styleClass="detail" text="Publisher: " />
+                <Label fx:id="publishDate" layoutX="1.0" layoutY="50.0" prefHeight="26.0" prefWidth="290.0" styleClass="detail" text="Publish Date: " />
+                <Label fx:id="creators" layoutX="1.0" layoutY="76.0" prefHeight="26.0" prefWidth="290.0" styleClass="detail" text="Creators: " />
+                <Label fx:id="value" layoutX="1.0" layoutY="100.0" prefHeight="26.0" prefWidth="290.0" styleClass="detail" text="Value: " />
+            </children>
+        </AnchorPane>
+      <Button fx:id="searchButton" layoutX="25.0" layoutY="151.0" mnemonicParsing="false" onAction="#search" prefHeight="34.0" prefWidth="90.0" text="Search" />
+      <Button layoutX="25.0" layoutY="22.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+    </children>
+</AnchorPane>

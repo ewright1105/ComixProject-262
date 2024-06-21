@@ -1,0 +1,27 @@
+.root {
+    -fx-background-color: "black";
+}
+
+.h1 {
+    -fx-text-fill: "white";
+    -fx-font-size: 40;
+    -fx-font-family: "Lucida Console";
+}
+
+.h2 {
+    -fx-text-fill: "white";
+    -fx-font-size: 20;
+    -fx-font-family: "Lucida Console";
+}
+
+.detail {
+    -fx-text-fill: "white";
+    -fx-font-family: "Lucida Console";
+}
+
+.listView {
+    -fx-background-color: "black";
+}
+
+.choiceBox {
+}

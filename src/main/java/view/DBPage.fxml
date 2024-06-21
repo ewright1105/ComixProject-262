@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@comix.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.DBController">
+    <children>
+        <Label layoutX="203.0" layoutY="23.0" styleClass="h2" text="COMIX - DATABASE" />
+        <Button layoutX="184.0" layoutY="152.0" mnemonicParsing="false" onAction="#switchToPC" prefHeight="34.0" prefWidth="90.0" text="Personal Collection" />
+        <Button layoutX="184.0" layoutY="100.0" mnemonicParsing="false" onAction="#switchToDBAdapter" prefHeight="34.0" prefWidth="90.0" text="Export DB" />
+        <ListView fx:id="comicListView" layoutY="200.0" prefHeight="200.0" prefWidth="300.0" />
+        <AnchorPane layoutX="300.0" layoutY="200.0" prefHeight="200.0" prefWidth="300.0">
+            <children>
+                <Button layoutX="169.0" layoutY="151.0" mnemonicParsing="false" onAction="#addComic" text="Add to Collection" />
+                <Label fx:id="svi" layoutX="1.0" layoutY="-2.0" prefHeight="26.0" prefWidth="290.0" styleClass="detail" text="SVI: " />
+                <Label fx:id="publisher" layoutX="1.0" layoutY="24.0" prefHeight="26.0" prefWidth="290.0" styleClass="detail" text="Publisher: " />
+                <Label fx:id="publishDate" layoutX="1.0" layoutY="50.0" prefHeight="26.0" prefWidth="290.0" styleClass="detail" text="Publish Date: " />
+                <Label fx:id="creators" layoutX="1.0" layoutY="76.0" prefHeight="26.0" prefWidth="290.0" styleClass="detail" text="Creators: " />
+            </children>
+        </AnchorPane>
+      <Button fx:id="searchButton" layoutX="25.0" layoutY="152.0" mnemonicParsing="false" onAction="#search" prefHeight="34.0" prefWidth="89.0" text="Search" />
+      <Button layoutX="25.0" layoutY="21.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+    </children>
+</AnchorPane>

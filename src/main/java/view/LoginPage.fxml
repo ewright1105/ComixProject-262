@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@comix.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.LoginController">
+   <children>
+      <TextField fx:id="nameTextField" layoutX="218.0" layoutY="200.0" prefHeight="26.0" prefWidth="164.0" promptText="Type in username or &quot;guest&quot;" />
+      <Label fx:id="h1" alignment="CENTER" layoutX="239.0" layoutY="101.0" styleClass="h1" text="COMIX" />
+      <Button fx:id="loginButton" layoutX="223.0" layoutY="252.0" mnemonicParsing="false" onAction="#login" prefHeight="26.0" prefWidth="67.0" text="LOGIN" />
+      <Button layoutX="308.0" layoutY="252.0" mnemonicParsing="false" onAction="#register" text="REGISTER" />
+   </children>
+</AnchorPane>
