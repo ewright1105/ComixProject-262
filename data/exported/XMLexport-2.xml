@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <object>
+    <values>'Mazing Man</values>
+    <values>1</values>
+    <values>2</values>
+    <values>DC Comics</values>
+    <values>Feb 01</values>
+    <values> 1986.</values>
+  </object>
+  <object>
+    <values> 2</values>
+    <values>1</values>
+    <values>52A</values>
+    <values>DC Comics</values>
+    <values>May 11</values>
+    <values> 2016.</values>
+  </object>
+  <object>
+    <values>All-New Ultimates</values>
+    <values>1</values>
+    <values>8</values>
+    <values>Marvel Comics</values>
+    <values>Sep 10</values>
+    <values> 2014.</values>
+  </object>
+</root>

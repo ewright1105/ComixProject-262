@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane prefHeight="240.0" prefWidth="316.0" stylesheets="@comix.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SearchModePCController">
+   <content>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ChoiceBox fx:id="searchMode" layoutX="34.0" layoutY="21.0" prefHeight="26.0" prefWidth="250.0" />
+            <ChoiceBox fx:id="searchField" layoutX="34.0" layoutY="61.0" prefHeight="26.0" prefWidth="249.0" />
+            <ChoiceBox fx:id="sortMode" layoutX="34.0" layoutY="102.0" prefHeight="26.0" prefWidth="250.0" />
+            <TextField fx:id="searchQuery" layoutX="34.0" layoutY="145.0" prefHeight="26.0" prefWidth="250.0" />
+         </children>
+      </AnchorPane>
+   </content>
+   <buttonTypes>
+      <ButtonType fx:constant="OK" />
+      <ButtonType fx:constant="CANCEL" />
+   </buttonTypes>
+   <expandableContent>
+      <HBox prefHeight="100.0" prefWidth="200.0" />
+   </expandableContent>
+</DialogPane>
